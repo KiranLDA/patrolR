@@ -32,12 +32,22 @@ To make sure the package works run the following
 # load library
 library(patrolR)
 
+#load in package data for testing
 data(patrol_info)
+
+# list of sites
+sites = rownames(patrol_info)
+
+# Specify the benefit of managing each site
 benefit = patrol_info[,"Total number of birds"] * patrol_info[,"Total number of species"]* patrol_info[,"Average number of disturbances per count"]
+
+#specify the cost of managing each site
 cost = patrol_info[,"Caloundra patrol cost"]
+
+#specify the available budget
 budget = 2000
 
-#find best sites to patrol within budget
+# find which sites to patrol within budget, which provide the best bang for your buck
 solutions = staticPATROL(sites, benefit, cost, budget)
 
 ```
