@@ -2,6 +2,10 @@
 
 
 
+## Background
+
+This package is affiliated with Dhanjal-Adams et al. (2016) and is aimed at optimising patrolling efforts for rangers. It uses a Genetic Algorithm to determine which sites have the greatest number of species impacted by human disturbances for the least cost to patrol. It can therefore be used to determine which sites to visit within a given budget to deliver the best outcomes for biodiverrsity.
+
 ## Getting Started
 
 
